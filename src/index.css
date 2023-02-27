@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+:root {
+
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    background-color: var(--Vary-Light-Gray);
+}
+
+.container {
+    max-width: 144rem;
+    margin: auto;
+    padding: 0 7rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.navbar {
+    height: 10rem;
+}
+
+.logo-svg {
+    cursor: pointer;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--Dark-Blue);
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: var(--Bright-Red);
+    color: var(--Vary-Light-Gray);
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.header {
+    gap: 5rem;
+    background: url('../src/images/bg-tablet-pattern.svg') no-repeat;
+    background-position: right -10rem;
+    background-size: contain;
+}
+
+.header-data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    height: 50rem;
+}
+
+.left-header {
+    gap: 3rem;
+    padding: 5rem 0;
+}
+
+.right-header {
+    background: url('../src/images/illustration-intro.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.common-h1 {
+    font-size: 6rem;
+    color: var(--Dark-Blue);
+}
+
+.common-para {
+    font-size: 2rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.header-btn {
+    width: 20rem;
+}
+
+.main {
+    background: url('../src/images/bg-tablet-pattern.svg') no-repeat;
+    background-position: -43rem 22rem;
+}
+
+.first-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding: 10rem 0;
+}
+
+.manage-data {
+    gap: 2rem;
+}
+
+.manage-list {
+    gap: 2rem;
+}
+
+.manage-list-items {
+    gap: 2rem;
+}
+
+.common-h2 {
+    font-size: 5rem;
+    color: var(--Dark-Blue);
+}
+
+.common-h3 {
+    font-size: 2.5rem;
+    color: var(--Dark-Blue);
+}
+
+.item-number {
+    font-size: 3rem;
+    padding: 0.5rem 2rem;
+    background-color: var(--Bright-Red);
+    color: var(--Very-Pale-Red);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.manage-list-items-bottom {
+    gap: 1rem;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.card-crousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 6rem 3rem;
+}
+
+.card {
+    background-color: whitesmoke;
+    padding: 0 5rem;
+}
+
+.card-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transform: translateY(-5rem);
+}
+
+
+.card-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 7rem;
+    margin-top: 15rem;
+    background-color: var(--Bright-Red);
+}
+
+.bottom-h2 {
+    color: var(--Very-Pale-Red);
+    width: 50%;
+}
+
+.bottom-btn {
+    background-color: var(--Very-Pale-Red);
+    color: var(--Bright-Red);
+    font-weight: 600;
+}
+
+.footer {
+    background-color: var(--Very-Dark-Blue);
+    padding: 5rem 7rem;
+    display: grid;
+    grid-template-columns: 0.6fr 0.6fr 0.6fr 1fr;
+}
+
+
+.footer-logo path {
+    fill: var(--Very-Pale-Red);
+}
+
+.social-icons {
+    gap: 1rem;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+.icons:hover path {
+    fill: var(--Bright-Red);
+}
+
+.footer-link {
+    color: var(--Very-Pale-Red);
+    font-size: 1.8rem;
+}
+
+.footer-link:hover {
+    color: var(--Bright-Red);
+}
+
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.footer-input {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.fourth-footer-div {
+    align-items: end;
+}
+
+.open-icon,
+.close-icon,
+.hamburger {
+    display: none;
+}
+
+.mob-card {
+    display: none;
+}
+
+
+/* MEDIA FOR LAPTOP SCREENS  */
+
+@media screen and (max-width:1024px) {
+    html {
+        font-size: 55%;
+    }
+
+    .btn-container {
+        display: none;
+    }
+
+    .header-data {
+        grid-template-columns: 1fr;
+        height: 100rem;
+    }
+
+    .left-header {
+        order: 2;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-header {
+        order: 1;
+        height: 50rem;
+    }
+
+    .first-section {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .fourth-footer-div {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+
+/* MEDIA FOR TAB SCREENS  */
+
+@media screen and (max-width:768px) {
+
+    .open-icon,
+    .hamburger {
+        display: block;
+    }
+
+    .menu-icons {
+        position: absolute;
+        top: 3.5rem;
+        right: 6rem;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    .nav {
+        position: absolute;
+        content: "";
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 100vh;
+        width: 100%;
+        touch-action: none;
+    }
+
+    .nav-ul {
+        flex-direction: column;
+        position: absolute;
+        top: 10rem;
+        left: 5rem;
+        right: 5rem;
+        background-color: var(--Vary-Light-Gray);
+        border-radius: 1rem;
+        padding: 5rem 2rem;
+        display: none;
+    }
+
+
+    .nav-link {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .none {
+        display: none;
+    }
+
+}
+
+/* MEDIA FOR MOBILE SCREENS  */
+
+
+@media screen and (max-width:550px) {
+
+    html {
+        font-size: 52%;
+    }
+
+    .container {
+        padding: 0 2rem;
+    }
+
+    .header {
+        background-position: 6rem -8rem;
+        gap: 0;
+    }
+
+    .header-data {
+        gap: 0;
+    }
+
+    .common-h1 {
+        font-size: 5rem;
+    }
+
+    .common-h2 {
+        font-size: 4rem;
+    }
+
+    .right-header {
+        height: 45rem;
+    }
+
+    .main {
+        background: none;
+    }
+
+    .manage-data {
+        text-align: center;
+    }
+
+    .third-section {
+        padding: 5rem 2rem;
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+        margin-top: 5rem;
+
+    }
+
+    .card-crousel {
+        position: relative;
+        width: 100%;
+        height: 30rem;
+    }
+
+    .card {
+        position: absolute;
+    }
+
+    .card-ul {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .card-li {
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid var(--Bright-Red);
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+    .active {
+
+        background-color: var(--Bright-Red);
+    }
+
+    .mob-card {
+        display: block;
+    }
+
+    .desk-card {
+        display: none;
+    }
+
+    .footer {
+        padding: 5rem 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .first-footer-div,
+    .fourth-footer-div {
+        gap: 2rem;
+    }
+}
